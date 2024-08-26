@@ -1,6 +1,6 @@
 #ifndef _CIRCUIT_H
 #define _CIRCUIT_H
-
+//this is a random comment
 // #include "gate.h"
 #include "types.h"
 class CGate;
