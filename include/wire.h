@@ -45,7 +45,7 @@ class CWire
 
 
   private:
-    CGate* mp_gates2drive[MaxFanout];     // list of connected gates
+    std::vector<CGate*> mp_gates2drive;     // list of connected gates
     int m_gate_inpupt_indices[MaxFanout]; // list of input to drive in each gate
     int m_num_output_connections;         // how many outputs are connected
 

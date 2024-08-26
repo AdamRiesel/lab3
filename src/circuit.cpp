@@ -66,6 +66,7 @@ void CCircuit::collect_components(){
         //instatiate all NAND gates
         for (int i = 0; i < m_num_NAND; i++){
             m_gates_in_circuit[index] = new CNandGate();
+            // m_gates_in_circuit.push_back(new CNandGate);
             index++;
         }
 

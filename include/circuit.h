@@ -1,7 +1,7 @@
 #ifndef _CIRCUIT_H
 #define _CIRCUIT_H
-//this is a random comment
-// #include "gate.h"
+#include <vector>
+
 #include "types.h"
 class CGate;
 class CWire;
@@ -24,6 +24,8 @@ class CCircuit{
             int a_num_outs);
         ~CCircuit();
 
+
+        void add_component();
 
         /**
          * @brief pure virtual method for arranging gates and wires to build
@@ -74,6 +76,8 @@ class CCircuit{
         int m_num_outs;
 
 
+        // std::vector<CGate*> m_gates_in_circuit;
+        // std::vector<CWire*> m_wires_in_circuit;
         CGate** m_gates_in_circuit;
         CWire** m_wires_in_circuit;
         eLogicLevel* m_circuit_outputs;

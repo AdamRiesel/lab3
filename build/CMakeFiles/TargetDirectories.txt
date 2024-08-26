@@ -1,0 +1,3 @@
+/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles/My2BitComp.dir
+/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles/edit_cache.dir
+/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles/rebuild_cache.dir
