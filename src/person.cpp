@@ -5,7 +5,6 @@
 
 //---CPerson Implementation------------------------------------------
 CPerson::CPerson(){
-    m_num_circuits = 0;
 }
 
 //--
@@ -19,8 +18,7 @@ void CPerson::add_circuit(CCircuit* a_new_circuit){
     /**
      * choose what type of circuit: 1 bit, 2 bit, etc.
      */
-    m_circuits_owned[m_num_circuits] = a_new_circuit;
-    m_num_circuits++;
+    m_circuits_owned.push_back(a_new_circuit);
 }
 
 //--

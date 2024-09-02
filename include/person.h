@@ -2,6 +2,7 @@
 #define _PERSON_H
 
 #include "types.h"
+#include <vector>
 class CCircuit;
 
 //---CPerson Interface----------------------------------------
@@ -43,7 +44,7 @@ class CPerson{
     private:
         int m_num_circuits;
         int m_max_circuits = 4;
-        CCircuit* m_circuits_owned[4];
+        std::vector<CCircuit*> m_circuits_owned;
 
         
 };
