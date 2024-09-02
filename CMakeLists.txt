@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.10) # Ensures CMake version is recent enough
 set(CMAKE_CXX_FLAGS "-Wall") # Show warnings
 
 set( CMAKE_RUNTIME_OUTPUT_DIRECTORY # Destination for generated executable
-${CMAKE_SOURCE_DIR}/
+${CMAKE_SOURCE_DIR}/ 
 )
 
 include_directories( # Where are the header files
