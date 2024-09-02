@@ -5,7 +5,6 @@
 
 //---CWire Implementation------------------------------------------
 CWire::CWire(){
-  // m_num_output_connections = 0;
 
 }
 
@@ -21,7 +20,6 @@ void CWire::add_output_connection( CGate* ap_gate_to_drive,
 
   mp_gates2drive.push_back(ap_gate_to_drive);
   m_gate_input_indices.push_back(a_gate_input2drive);
-  // ++m_num_output_connections;
 }
 
 //---

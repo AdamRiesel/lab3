@@ -48,7 +48,6 @@ class CWire
   private:
     std::vector<CGate*> mp_gates2drive;     // list of connected gates
     std::vector<int> m_gate_input_indices; // list of input to drive in each gate
-    // int m_num_output_connections;         // how many outputs are connected
 
 };
 

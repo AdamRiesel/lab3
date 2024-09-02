@@ -149,10 +149,10 @@ CMakeFiles/My2BitComp.dir/src/main.cpp.o: \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/gate.h \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/types.h \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/wire.h \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/circuit.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/circuit.h \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/types.h \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/person.h
