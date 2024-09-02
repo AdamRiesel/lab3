@@ -2,6 +2,7 @@
 #define _GATE_H
 
 #include "types.h"
+#include <vector>
 
 #include <iostream>
 // #include "wire.h"
