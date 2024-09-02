@@ -154,5 +154,17 @@ CMakeFiles/My2BitComp.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/vector.tcc \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/wire.h \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/circuit.h \
+ /usr/include/c++/11/unordered_map \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/types.h \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/person.h
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/person.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/soft_circuit.h

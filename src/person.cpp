@@ -1,5 +1,5 @@
-#include "person.h"
-#include "circuit.h"
+#include "../include/person.h"
+#include "../include/circuit.h"
 
 #include <iostream>
 

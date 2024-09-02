@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/My2BitComp.dir/src/person.cpp.o.d"
   "CMakeFiles/My2BitComp.dir/src/simulator.cpp.o"
   "CMakeFiles/My2BitComp.dir/src/simulator.cpp.o.d"
+  "CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o"
+  "CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o.d"
   "CMakeFiles/My2BitComp.dir/src/wire.cpp.o"
   "CMakeFiles/My2BitComp.dir/src/wire.cpp.o.d"
 )

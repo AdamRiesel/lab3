@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-#include "simulator.h"
+#include "../include/simulator.h"
 
 CSimulator::CSimulator(){
     //TODO

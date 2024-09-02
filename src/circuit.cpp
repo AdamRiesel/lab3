@@ -1,7 +1,7 @@
 #include <iostream>
-#include "circuit.h"
-#include "wire.h"
-#include "gate.h"
+#include "../include/circuit.h"
+#include "../include/wire.h"
+#include "../include/gate.h"
 #include <bits/stdc++.h> 
 
 //---CWire Implementation------------------------------------------
@@ -41,17 +41,7 @@ CCircuit::~CCircuit(){
 
 //--
 void CCircuit::expand_component_lists(){
-    // CGate**      temp_gates = new CGate*     [m_num_gates];
-    // CWire**      temp_wires = new CWire*     [m_num_wires];
-    // eLogicLevel* temp_outs  = new eLogicLevel[m_num_outs];
-    // eLogicLevel* temp_ins   = new eLogicLevel[m_num_ins];
 
-
-
-    // m_gates_in_circuit = temp_gates;
-    // m_wires_in_circuit = temp_wires;
-    // m_circuit_outputs  = temp_outs;
-    // m_ins              = temp_ins;
 
 }
 
@@ -62,7 +52,6 @@ void CCircuit::collect_components(){
     //instatiate all NAND gates
     for (int i = 0; i < m_num_NAND; i++){
         m_gates_in_circuit.push_back(new CNandGate());
-        // m_gates_in_circuit.push_back(new CNandGate);
     }
 
     //instatiate all AND gates
@@ -287,4 +276,5 @@ void C2BitComp::build_circuit(){
     m_wires_in_circuit[6]->add_output_connection(or_0, 1);
     m_wires_in_circuit[7]->add_output_connection(or_1, 1);
 }
+
 

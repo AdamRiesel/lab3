@@ -1,29 +1,33 @@
 #include <iostream>
 
-#include "gate.h"
-#include "wire.h"
-#include "circuit.h"
-#include "types.h"
-#include "person.h"
-
+#include "../include/gate.h"
+#include "../include/wire.h"
+#include "../include/circuit.h"
+#include "../include/types.h"
+#include "../include/person.h"
+#include "../include/soft_circuit.h"
 
 int main(){
 
-    CPerson adamriesel;
 
-    C1BitComp my_1bit_comp;
-    C1BitComp second_comp;
+    CSoftCircuit my_soft_circuit;
+
+    my_soft_circuit.build_circuit();
+    // CPerson adamriesel;
+
+    // C1BitComp my_1bit_comp;
+    // C1BitComp second_comp;
 
 
-    C2BitComp my_2bit_comp(&my_1bit_comp, &second_comp);
+    // C2BitComp my_2bit_comp(&my_1bit_comp, &second_comp);
     
 
-    adamriesel.add_circuit(&my_1bit_comp);
-    adamriesel.add_circuit(&second_comp);
-    adamriesel.add_circuit(&my_2bit_comp);
+    // adamriesel.add_circuit(&my_1bit_comp);
+    // adamriesel.add_circuit(&second_comp);
+    // adamriesel.add_circuit(&my_2bit_comp);
 
     
-    adamriesel.test_all_combs(2);
+    // adamriesel.test_all_combs(2);
 
     // std::vector<CGate*> my_vector;
 

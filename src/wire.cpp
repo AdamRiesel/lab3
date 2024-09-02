@@ -1,5 +1,5 @@
-#include "wire.h"
-#include "gate.h"
+#include "../include/wire.h"
+#include "../include/gate.h"
 #include <iostream>
 
 

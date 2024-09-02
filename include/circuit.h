@@ -1,6 +1,8 @@
 #ifndef _CIRCUIT_H
 #define _CIRCUIT_H
 #include <vector>
+#include <unordered_map>
+#include <string>
 
 #include "types.h"
 class CGate;
@@ -120,5 +122,8 @@ class C2BitComp: public CCircuit{
     protected:
         CCircuit* m_sub_circuits[2];
 };
+
+
+
 
 #endif

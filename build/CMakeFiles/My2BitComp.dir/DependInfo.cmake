@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/adamriesel/Desktop/uni/MTRX3760/lab3/src/main.cpp" "CMakeFiles/My2BitComp.dir/src/main.cpp.o" "gcc" "CMakeFiles/My2BitComp.dir/src/main.cpp.o.d"
   "/home/adamriesel/Desktop/uni/MTRX3760/lab3/src/person.cpp" "CMakeFiles/My2BitComp.dir/src/person.cpp.o" "gcc" "CMakeFiles/My2BitComp.dir/src/person.cpp.o.d"
   "/home/adamriesel/Desktop/uni/MTRX3760/lab3/src/simulator.cpp" "CMakeFiles/My2BitComp.dir/src/simulator.cpp.o" "gcc" "CMakeFiles/My2BitComp.dir/src/simulator.cpp.o.d"
+  "/home/adamriesel/Desktop/uni/MTRX3760/lab3/src/soft_circuit.cpp" "CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o" "gcc" "CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o.d"
   "/home/adamriesel/Desktop/uni/MTRX3760/lab3/src/wire.cpp" "CMakeFiles/My2BitComp.dir/src/wire.cpp.o" "gcc" "CMakeFiles/My2BitComp.dir/src/wire.cpp.o.d"
   )
 

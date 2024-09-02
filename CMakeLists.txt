@@ -18,4 +18,5 @@ add_executable( My2BitComp
                 src/person.cpp
                 src/wire.cpp
                 src/simulator.cpp
+                src/soft_circuit.cpp
                 ) # Create an executable "hello

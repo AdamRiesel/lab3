@@ -249,6 +249,30 @@ src/simulator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/src/simulator.cpp.s
 .PHONY : src/simulator.cpp.s
 
+src/soft_circuit.o: src/soft_circuit.cpp.o
+.PHONY : src/soft_circuit.o
+
+# target to build an object file
+src/soft_circuit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o
+.PHONY : src/soft_circuit.cpp.o
+
+src/soft_circuit.i: src/soft_circuit.cpp.i
+.PHONY : src/soft_circuit.i
+
+# target to preprocess a source file
+src/soft_circuit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.i
+.PHONY : src/soft_circuit.cpp.i
+
+src/soft_circuit.s: src/soft_circuit.cpp.s
+.PHONY : src/soft_circuit.s
+
+# target to generate assembly for a file
+src/soft_circuit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.s
+.PHONY : src/soft_circuit.cpp.s
+
 src/wire.o: src/wire.cpp.o
 .PHONY : src/wire.o
 
@@ -297,6 +321,9 @@ help:
 	@echo "... src/simulator.o"
 	@echo "... src/simulator.i"
 	@echo "... src/simulator.s"
+	@echo "... src/soft_circuit.o"
+	@echo "... src/soft_circuit.i"
+	@echo "... src/soft_circuit.s"
 	@echo "... src/wire.o"
 	@echo "... src/wire.i"
 	@echo "... src/wire.s"
