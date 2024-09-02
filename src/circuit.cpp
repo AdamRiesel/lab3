@@ -32,82 +32,69 @@ CCircuit::~CCircuit(){
     }
 
 
-    delete[] m_circuit_outputs;
-    delete[] m_ins;
-    delete[] m_gates_in_circuit;
-    delete[] m_wires_in_circuit;
+    // delete[] m_circuit_outputs;
+    // delete[] m_ins;
+    // delete[] m_gates_in_circuit;
+    // delete[] m_wires_in_circuit;
 
 }
 
 //--
 void CCircuit::expand_component_lists(){
-    CGate**      temp_gates = new CGate*     [m_num_gates];
-    CWire**      temp_wires = new CWire*     [m_num_wires];
-    eLogicLevel* temp_outs  = new eLogicLevel[m_num_outs];
-    eLogicLevel* temp_ins   = new eLogicLevel[m_num_ins];
+    // CGate**      temp_gates = new CGate*     [m_num_gates];
+    // CWire**      temp_wires = new CWire*     [m_num_wires];
+    // eLogicLevel* temp_outs  = new eLogicLevel[m_num_outs];
+    // eLogicLevel* temp_ins   = new eLogicLevel[m_num_ins];
 
 
 
-    m_gates_in_circuit = temp_gates;
-    m_wires_in_circuit = temp_wires;
-    m_circuit_outputs  = temp_outs;
-    m_ins              = temp_ins;
+    // m_gates_in_circuit = temp_gates;
+    // m_wires_in_circuit = temp_wires;
+    // m_circuit_outputs  = temp_outs;
+    // m_ins              = temp_ins;
 
 }
 
 //--
 void CCircuit::collect_components(){
 
-    //counter to iterate through all gates
-    int index = 0;
 
-    while (index < m_num_gates){
-
-        //instatiate all NAND gates
-        for (int i = 0; i < m_num_NAND; i++){
-            m_gates_in_circuit[index] = new CNandGate();
-            // m_gates_in_circuit.push_back(new CNandGate);
-            index++;
-        }
-
-        //instatiate all AND gates
-        for (int i = 0; i < m_num_AND; i++){
-            m_gates_in_circuit[index] = new CAndGate();
-            index++;
-        }
-
-        //instatiate all OR gates
-        for (int i = 0; i < m_num_OR; i++){
-            m_gates_in_circuit[index] = new COrGate();
-            index++;
-        }
-
-        //instatiate all NOR gates
-        for (int i = 0; i < m_num_NOR; i++){
-            m_gates_in_circuit[index] = new CNorGate();//--
-            index++;
-        }
-
-        //instatiate all XOR gates
-        for (int i = 0; i < m_num_XOR; i++){
-            m_gates_in_circuit[index] = new CXorGate();
-            index++;
-        }
-
-        //instatiate all NOT gates
-        for (int i = 0; i < m_num_NOT; i++){
-            m_gates_in_circuit[index] = new CNotGate;
-            index++;//--
-        }
-           
-
+    //instatiate all NAND gates
+    for (int i = 0; i < m_num_NAND; i++){
+        m_gates_in_circuit.push_back(new CNandGate());
+        // m_gates_in_circuit.push_back(new CNandGate);
     }
+
+    //instatiate all AND gates
+    for (int i = 0; i < m_num_AND; i++){
+        m_gates_in_circuit.push_back(new CAndGate());
+    }
+
+    //instatiate all OR gates
+    for (int i = 0; i < m_num_OR; i++){
+        m_gates_in_circuit.push_back(new COrGate());
+    }
+
+    //instatiate all NOR gates
+    for (int i = 0; i < m_num_NOR; i++){
+        m_gates_in_circuit.push_back(new CNorGate());//--
+    }
+
+    //instatiate all XOR gates
+    for (int i = 0; i < m_num_XOR; i++){
+        m_gates_in_circuit.push_back(new CXorGate());
+    }
+
+    //instatiate all NOT gates
+    for (int i = 0; i < m_num_NOT; i++){
+        m_gates_in_circuit.push_back(new CNotGate);
+    }
+           
 
     //instantiate all wires
     for (int i = 0; i < m_num_wires; i++){
-        m_wires_in_circuit[i] = new CWire;
-
-        }
+        m_wires_in_circuit.push_back(new CWire);
+    }
 }
 
 
@@ -183,6 +170,7 @@ void CCircuit::get_outputs(eLogicLevel outputs[3]){
 //--
 void CCircuit::set_inputs(eLogicLevel* a_ins){
 
+    m_ins.resize(m_num_ins);
     for (int i = 0; i < m_num_ins; i++){
         eLogicLevel temp = a_ins[i];
 
@@ -192,6 +180,7 @@ void CCircuit::set_inputs(eLogicLevel* a_ins){
     }
 
 
+    m_circuit_outputs.resize(3);
 
     m_circuit_outputs[0] = m_gates_in_circuit[0]->get_output_state();
     m_circuit_outputs[1] = m_gates_in_circuit[2]->get_output_state();
@@ -224,7 +213,7 @@ void C2BitComp::set_inputs(eLogicLevel* a_ins){
         ins_3[3 + i] = out_1[i];
     }
 
-    
+    m_ins.resize(m_num_ins);
     //set the inputs of each input for the 2 bit comp
     for (int i = 0; i < m_num_ins; i++){
         eLogicLevel temp = ins_3[i];
@@ -234,6 +223,7 @@ void C2BitComp::set_inputs(eLogicLevel* a_ins){
         m_wires_in_circuit[i]->drive_level(m_ins[i]);
     }
 
+    m_circuit_outputs.resize(3);
     //store the new circuit outputs
     m_circuit_outputs[0] = m_gates_in_circuit[3]->get_output_state();
     m_circuit_outputs[1] = m_gates_in_circuit[1]->get_output_state();

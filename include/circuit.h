@@ -78,10 +78,10 @@ class CCircuit{
 
         // std::vector<CGate*> m_gates_in_circuit;
         // std::vector<CWire*> m_wires_in_circuit;
-        CGate** m_gates_in_circuit;
-        CWire** m_wires_in_circuit;
-        eLogicLevel* m_circuit_outputs;
-        eLogicLevel* m_ins;
+        std::vector<CGate*> m_gates_in_circuit;
+        std::vector<CWire*> m_wires_in_circuit;
+        std::vector<eLogicLevel> m_circuit_outputs;
+        std::vector<eLogicLevel> m_ins;
 
 };
 
