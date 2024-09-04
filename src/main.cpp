@@ -15,7 +15,11 @@ int main(){
     CSoftCircuit my_soft_circuit;
 
     my_soft_circuit.build_circuit();
-    // CPerson adamriesel;
+
+    CPerson adamriesel;
+    adamriesel.add_circuit(&my_soft_circuit);
+
+    adamriesel.test_circuit(0);
 
     // C1BitComp my_1bit_comp;
     // C1BitComp second_comp;
@@ -47,19 +51,25 @@ int main(){
 
 
 
-    //testing a has map
-    // std::unordered_map<std::string, int> my_phonebook;
+    // std::string request = "";
+    // std::vector<std::string> my_vector;
 
-    // my_phonebook.insert({"Adam", 432980});
-    // my_phonebook.insert({"James", 948302});
-    // auto changer = my_phonebook.find("Adam");
+    // while (true){
+    //     std::cin >> request;
 
-    // // changer->second = 12345;
+    //     if (request.compare("#") == 0){
+    //         break;
+    //     }
 
-    // auto number = my_phonebook.find("Adam")->second;
-    // std::cout<<number<<"there it is"<<std::endl;
+    //     my_vector.push_back(request);
+    //     std::cout<<"another one"<<std::endl;
+    // }
 
-    // std::cout << "Name: " << search ->first <<"number"<<search->second;
+    // std::cout<<"escaped while loop"<<std::endl;
+
+    // for (int i = 0; i < int(my_vector.size()); i++){
+    //     std::cout<<my_vector[i]<<std::endl;
+    // }
 
 
     return 0;

@@ -46,11 +46,11 @@ class CWire
      */
     void drive_level(eLogicLevel a_new_level);
 
-
-    
+    eLogicLevel get_drive_value();
 
 
   private:
+    eLogicLevel m_drive_value;
     std::vector<CGate*> mp_gates2drive;     // list of connected gates
     std::vector<int> m_gate_input_indices; // list of input to drive in each gate
 

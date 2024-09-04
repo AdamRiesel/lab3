@@ -3,6 +3,7 @@
 
 #include <string>
 #include <unordered_map>
+#include <vector>
 
 class CGate;
 
@@ -12,6 +13,9 @@ class CSoftCircuit{
         ~CSoftCircuit();
 
         void build_circuit();
+
+        void set_inputs(std::vector<std::string> names, std::vector<eLogicLevel> values);
+        void get_outputs(std::vector<std::string> names, std::vector<eLogicLevel> &outs);
 
     private:
         std::unordered_map<std::string, CGate*> m_gates_in_circuit;

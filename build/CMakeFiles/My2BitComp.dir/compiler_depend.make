@@ -993,6 +993,7 @@ CMakeFiles/My2BitComp.dir/src/person.cpp.o: ../src/person.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  ../include/soft_circuit.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -1460,8 +1461,8 @@ CMakeFiles/My2BitComp.dir/src/wire.cpp.o: ../src/wire.cpp \
   /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/vector.tcc \
-  ../include/gate.h \
   ../include/types.h \
+  ../include/gate.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \

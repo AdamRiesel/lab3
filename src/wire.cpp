@@ -28,4 +28,9 @@ void CWire::drive_level( eLogicLevel a_new_level )
   for( int i=0; i < int(mp_gates2drive.size()); ++i ){
     mp_gates2drive[i]->drive_input( m_gate_input_indices[i], a_new_level );
   }
+  m_drive_value = a_new_level;
+}
+
+eLogicLevel CWire::get_drive_value(){
+  return m_drive_value;
 }

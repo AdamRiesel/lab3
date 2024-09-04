@@ -39,6 +39,24 @@ input wire5 nor1 1
 
 end
 
+input_wire0 input_wire1 #
+0 0 #
+wire4 wire5 wire6 #
+
+#----------------
+component NAND nand0
+
+wire in0 
+wire in1 
+wire out0
+
+input in0 nand0 0
+input in1 nand0 1
+
+output nand0 out0
+
+end
+
 
 
 

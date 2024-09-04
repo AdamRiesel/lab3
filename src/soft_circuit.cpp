@@ -104,8 +104,9 @@ void CSoftCircuit::build_circuit(){
       std::string gate_name;
       std::string wire_name;
 
-      std::cin >> wire_name;
       std::cin >> gate_name;
+      std::cin >> wire_name;
+      
 
       CWire* temp_wire = m_wires_in_circuit.find(wire_name)->second;
       CGate* temp_gate = m_gates_in_circuit.find(gate_name)->second;
@@ -128,4 +129,28 @@ void CSoftCircuit::build_circuit(){
     }
   }
 
+}
+
+void CSoftCircuit::set_inputs(std::vector<std::string> names, 
+                std::vector<eLogicLevel> values){
+
+  CWire* temp_wire;
+  for (int i = 0; i < int(names.size()); i++){
+    temp_wire = m_wires_in_circuit.find(names[i])->second;
+
+    temp_wire->drive_level(values[i]);
+  }
+}
+
+void CSoftCircuit::get_outputs(std::vector<std::string> names, std::vector<eLogicLevel> &outs){
+  CWire* temp_wire;
+
+  for (int i = 0; i < int(names.size()); i++){
+    temp_wire = m_wires_in_circuit.find(names[i])->second;
+
+    eLogicLevel drive_value = temp_wire->get_drive_value();
+    // std::cout<<"the drive value for temp wire is: "<<drive_value<<std::endl;
+    outs.push_back(drive_value);
+
+  }
 }
