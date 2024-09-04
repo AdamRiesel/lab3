@@ -1,8 +1,8 @@
 #ifndef _WIRE_H
 #define _WIRE_H
 
-#include "types.h"
 #include <vector>
+#include "types.h"
 
 class CGate;
 
@@ -23,6 +23,9 @@ class CWire
     CWire();
     ~CWire();
     
+  
+
+
     /**
      * @brief adds to the list of outputs that this wire drives
      * 
@@ -43,6 +46,8 @@ class CWire
      */
     void drive_level(eLogicLevel a_new_level);
 
+
+    
 
 
   private:

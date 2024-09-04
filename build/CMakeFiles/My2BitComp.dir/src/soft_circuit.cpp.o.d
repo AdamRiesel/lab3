@@ -163,4 +163,6 @@ CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o: \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h
+ /usr/include/c++/11/bits/erase_if.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/wire.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/types.h

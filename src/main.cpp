@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <unordered_map>
 
 #include "../include/gate.h"
 #include "../include/wire.h"
@@ -10,37 +12,55 @@
 int main(){
 
 
-    // CSoftCircuit my_soft_circuit;
+    CSoftCircuit my_soft_circuit;
 
-    // my_soft_circuit.build_circuit();
-    CPerson adamriesel;
+    my_soft_circuit.build_circuit();
+    // CPerson adamriesel;
 
-    C1BitComp my_1bit_comp;
-    C1BitComp second_comp;
+    // C1BitComp my_1bit_comp;
+    // C1BitComp second_comp;
 
 
-    C2BitComp my_2bit_comp(&my_1bit_comp, &second_comp);
+    // C2BitComp my_2bit_comp(&my_1bit_comp, &second_comp);
     
 
-    adamriesel.add_circuit(&my_1bit_comp);
-    adamriesel.add_circuit(&second_comp);
-    adamriesel.add_circuit(&my_2bit_comp);
+    // adamriesel.add_circuit(&my_1bit_comp);
+    // adamriesel.add_circuit(&second_comp);
+    // adamriesel.add_circuit(&my_2bit_comp);
 
     
-    adamriesel.test_all_combs(2);
+    // adamriesel.test_all_combs(2);
 
-    std::vector<CGate*> my_vector;
+    // std::vector<CGate*> my_vector;
 
-    my_vector.push_back(new CNandGate);
-    my_vector[0]->drive_input(0, LOGIC_HIGH);
-    my_vector[0]->drive_input(1, LOGIC_LOW);
+    // my_vector.push_back(new CNandGate);
+    // my_vector[0]->drive_input(0, LOGIC_HIGH);
+    // my_vector[0]->drive_input(1, LOGIC_LOW);
 
-    eLogicLevel out = my_vector[0]->get_output_state();
+    // eLogicLevel out = my_vector[0]->get_output_state();
 
-    std::cout<<"My output is: "<<out<<std::endl;
+    // std::cout<<"My output is: "<<out<<std::endl;
     
     // while (true){
     //     int x = 1;
     // }
+
+
+
+    //testing a has map
+    // std::unordered_map<std::string, int> my_phonebook;
+
+    // my_phonebook.insert({"Adam", 432980});
+    // my_phonebook.insert({"James", 948302});
+    // auto changer = my_phonebook.find("Adam");
+
+    // // changer->second = 12345;
+
+    // auto number = my_phonebook.find("Adam")->second;
+    // std::cout<<number<<"there it is"<<std::endl;
+
+    // std::cout << "Name: " << search ->first <<"number"<<search->second;
+
+
     return 0;
 }

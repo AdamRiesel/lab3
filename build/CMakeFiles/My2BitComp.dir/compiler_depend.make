@@ -793,15 +793,6 @@ CMakeFiles/My2BitComp.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  ../include/gate.h \
-  ../include/types.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  ../include/wire.h \
-  ../include/circuit.h \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/hashtable.h \
@@ -816,6 +807,15 @@ CMakeFiles/My2BitComp.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
+  ../include/gate.h \
+  ../include/types.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  ../include/wire.h \
+  ../include/circuit.h \
   ../include/types.h \
   ../include/person.h \
   ../include/soft_circuit.h
@@ -1406,12 +1406,13 @@ CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o: ../src/soft_circuit.cpp \
   /usr/include/c++/11/bits/enable_special_members.h \
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
-  /usr/include/c++/11/bits/erase_if.h
+  /usr/include/c++/11/bits/erase_if.h \
+  ../include/wire.h \
+  ../include/types.h
 
 CMakeFiles/My2BitComp.dir/src/wire.cpp.o: ../src/wire.cpp \
   /usr/include/stdc-predef.h \
   ../include/wire.h \
-  ../include/types.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -1460,6 +1461,7 @@ CMakeFiles/My2BitComp.dir/src/wire.cpp.o: ../src/wire.cpp \
   /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/vector.tcc \
   ../include/gate.h \
+  ../include/types.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \

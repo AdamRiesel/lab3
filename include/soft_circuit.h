@@ -15,6 +15,7 @@ class CSoftCircuit{
 
     private:
         std::unordered_map<std::string, CGate*> m_gates_in_circuit;
+        std::unordered_map<std::string, CWire*> m_wires_in_circuit;
 };
 
 #endif
