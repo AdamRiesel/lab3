@@ -146,4 +146,4 @@ CMakeFiles/My2BitComp.dir/src/simulator.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/simulator.h
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/simulator.h

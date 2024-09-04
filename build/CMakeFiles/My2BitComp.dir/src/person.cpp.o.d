@@ -1,8 +1,8 @@
 CMakeFiles/My2BitComp.dir/src/person.cpp.o: \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/person.cpp \
  /usr/include/stdc-predef.h \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/person.h \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/types.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/person.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/types.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -45,7 +45,7 @@ CMakeFiles/My2BitComp.dir/src/person.cpp.o: \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/circuit.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/circuit.h \
  /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/stl_function.h \

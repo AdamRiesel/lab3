@@ -146,7 +146,7 @@ CMakeFiles/My2BitComp.dir/src/circuit.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/circuit.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/circuit.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
@@ -161,9 +161,9 @@ CMakeFiles/My2BitComp.dir/src/circuit.cpp.o: \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/types.h \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/wire.h \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/gate.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/types.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/wire.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/gate.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/cfloat \
