@@ -37,14 +37,16 @@ output and2 wire5
 input wire4 nor1 0
 input wire5 nor1 1
 
-end
+output nor1 wire6
 
+end
+#-----------------
 input_wire0 input_wire1 #
 0 0 #
-wire4 wire5 wire6 #
+wire4 wire6 wire5 #
 
 #----------------
-component NAND nand0
+component AND nand0
 
 wire in0 
 wire in1 
