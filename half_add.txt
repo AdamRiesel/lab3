@@ -1,0 +1,31 @@
+component XOR xor1
+component AND and1
+
+wire input0 
+wire input1 
+
+wire sum
+wire carry
+
+input input0 xor1 0
+input input1 xor1 1
+
+input input0 and1 0
+input input1 and1 1
+
+output xor1 sum
+output and1 carry
+
+end
+
+input0 input1 #
+0 0 #
+sum carry #
+
+y
+0 1 #
+y 
+1 0 #
+y 
+1 1 #
+n

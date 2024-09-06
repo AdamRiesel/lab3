@@ -1,7 +1,7 @@
 CMakeFiles/My2BitComp.dir/src/wire.cpp.o: \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/wire.cpp \
  /usr/include/stdc-predef.h \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/wire.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/wire.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -44,8 +44,8 @@ CMakeFiles/My2BitComp.dir/src/wire.cpp.o: \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/types.h \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/gate.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/types.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/gate.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h /usr/include/c++/11/bits/postypes.h \

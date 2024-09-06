@@ -129,30 +129,6 @@ My2BitComp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/build
 .PHONY : My2BitComp/fast
 
-src/circuit.o: src/circuit.cpp.o
-.PHONY : src/circuit.o
-
-# target to build an object file
-src/circuit.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/src/circuit.cpp.o
-.PHONY : src/circuit.cpp.o
-
-src/circuit.i: src/circuit.cpp.i
-.PHONY : src/circuit.i
-
-# target to preprocess a source file
-src/circuit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/src/circuit.cpp.i
-.PHONY : src/circuit.cpp.i
-
-src/circuit.s: src/circuit.cpp.s
-.PHONY : src/circuit.s
-
-# target to generate assembly for a file
-src/circuit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/src/circuit.cpp.s
-.PHONY : src/circuit.cpp.s
-
 src/gate.o: src/gate.cpp.o
 .PHONY : src/gate.o
 
@@ -225,30 +201,6 @@ src/person.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/src/person.cpp.s
 .PHONY : src/person.cpp.s
 
-src/simulator.o: src/simulator.cpp.o
-.PHONY : src/simulator.o
-
-# target to build an object file
-src/simulator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/src/simulator.cpp.o
-.PHONY : src/simulator.cpp.o
-
-src/simulator.i: src/simulator.cpp.i
-.PHONY : src/simulator.i
-
-# target to preprocess a source file
-src/simulator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/src/simulator.cpp.i
-.PHONY : src/simulator.cpp.i
-
-src/simulator.s: src/simulator.cpp.s
-.PHONY : src/simulator.s
-
-# target to generate assembly for a file
-src/simulator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/src/simulator.cpp.s
-.PHONY : src/simulator.cpp.s
-
 src/soft_circuit.o: src/soft_circuit.cpp.o
 .PHONY : src/soft_circuit.o
 
@@ -306,9 +258,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... My2BitComp"
-	@echo "... src/circuit.o"
-	@echo "... src/circuit.i"
-	@echo "... src/circuit.s"
 	@echo "... src/gate.o"
 	@echo "... src/gate.i"
 	@echo "... src/gate.s"
@@ -318,9 +267,6 @@ help:
 	@echo "... src/person.o"
 	@echo "... src/person.i"
 	@echo "... src/person.s"
-	@echo "... src/simulator.o"
-	@echo "... src/simulator.i"
-	@echo "... src/simulator.s"
 	@echo "... src/soft_circuit.o"
 	@echo "... src/soft_circuit.i"
 	@echo "... src/soft_circuit.s"

@@ -1,0 +1,54 @@
+#instantiate all the gates needed
+component NOT not1
+component NOT not2
+
+component AND and1
+component AND and2
+
+component NOR nor1
+
+#instantiate the input wires (A and B)
+wire input_wire0
+wire input_wire1
+
+#instantiate all other wires
+wire wire2
+wire wire3
+wire wire4
+wire wire5
+wire wire6
+
+input input_wire0 not1 0
+input input_wire1 not2 0
+
+output not1 wire2
+output not2 wire3
+
+input input_wire0 and2 0
+input wire3       and2 1
+
+input input_wire1 and1 1
+input wire2       and1 0
+
+output and1 wire4
+output and2 wire5
+
+input wire4 nor1 0
+input wire5 nor1 1
+
+output nor1 wire6
+
+end
+
+input_wire0 input_wire1 #
+0 0 #
+wire4 wire6 wire5 #
+
+y
+0 1
+y
+1 0
+y 
+1 1
+n
+

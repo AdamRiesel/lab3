@@ -1,16 +1,14 @@
 #include <iostream>
-#include "../include/gate.h"
-#include "../include/soft_circuit.h"
+
+#include "gate.h"
+#include "soft_circuit.h"
 #include "wire.h"
 
+//-------SoftCircuit Implementation--------------
+CSoftCircuit::CSoftCircuit(){}
+CSoftCircuit::~CSoftCircuit(){}
 
-CSoftCircuit::CSoftCircuit(){};
-
-CSoftCircuit::~CSoftCircuit(){
-
-}
-
-//read the text file
+//--
 void CSoftCircuit::build_circuit(){
     while( true )
   {
@@ -40,6 +38,7 @@ void CSoftCircuit::build_circuit(){
 
         CGate* temp_gate;
 
+        //determine which type of gate to add to has table
         if (gate_type == "NAND"){
             temp_gate = new CNandGate;
         }
@@ -62,6 +61,7 @@ void CSoftCircuit::build_circuit(){
             std::cout<<"you fool, bad gate type"<<std::endl;
         }
 
+        //add gate to hash table
         m_gates_in_circuit.insert({gate_name, temp_gate});
     }
 
@@ -91,7 +91,7 @@ void CSoftCircuit::build_circuit(){
       int input_idx = stoi(input_idx_str);
 
       std::cout << "Connecting the output of wire: " << wire_name
-                << "to the input of gate: " << gate_name <<std::endl;
+                << " to the input of gate: " << gate_name <<std::endl;
 
       CWire* temp_wire = m_wires_in_circuit.find(wire_name)->second;
       CGate* temp_gate = m_gates_in_circuit.find(gate_name)->second;
@@ -107,7 +107,6 @@ void CSoftCircuit::build_circuit(){
       std::cin >> gate_name;
       std::cin >> wire_name;
       
-
       CWire* temp_wire = m_wires_in_circuit.find(wire_name)->second;
       CGate* temp_gate = m_gates_in_circuit.find(gate_name)->second;
 
@@ -117,12 +116,13 @@ void CSoftCircuit::build_circuit(){
     //end the process of building the circuit
     else if( request.compare( "end" ) == 0 )
     {
-      break; // end of file
+      break; 
     }
     else
     {
       std::cout << "Unrecognised command " << request << std::endl;
       std::cout << "Continuing to next line" << std::endl;
+
       // get the rest of the line and ignore it
       std::string DummyVar;
       getline( std::cin, DummyVar );
@@ -131,25 +131,31 @@ void CSoftCircuit::build_circuit(){
 
 }
 
+//--
 void CSoftCircuit::set_inputs(std::vector<std::string> names, 
                 std::vector<eLogicLevel> values){
 
   CWire* temp_wire;
+
+  //set the logic level of each wire specified
   for (int i = 0; i < int(names.size()); i++){
     temp_wire = m_wires_in_circuit.find(names[i])->second;
-
     temp_wire->drive_level(values[i]);
   }
 }
 
-void CSoftCircuit::get_outputs(std::vector<std::string> names, std::vector<eLogicLevel> &outs){
+//--
+void CSoftCircuit::get_outputs(std::vector<std::string> names, 
+          std::vector<eLogicLevel> &outs){
+
   CWire* temp_wire;
 
+  //retrieve the logic level of each output wire epcified
   for (int i = 0; i < int(names.size()); i++){
     temp_wire = m_wires_in_circuit.find(names[i])->second;
 
+    //store the logic value into the output vector
     eLogicLevel drive_value = temp_wire->get_drive_value();
-    // std::cout<<"the drive value for temp wire is: "<<drive_value<<std::endl;
     outs.push_back(drive_value);
 
   }

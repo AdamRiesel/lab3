@@ -2,7 +2,9 @@
 #define _PERSON_H
 
 #include "types.h"
+
 #include <vector>
+
 class CCircuit;
 class CSoftCircuit;
 
@@ -11,7 +13,6 @@ class CPerson{
     public:
         CPerson();
         ~CPerson();
-
 
         /**
          * @brief tests a circuit at a particular index with the specified 
@@ -24,7 +25,6 @@ class CPerson{
          */
         void test_circuit(int a_circuit_idx);
 
-
         /**
          * @brief adds a circuit to the array of circuits owned by a Person
          * 
@@ -33,12 +33,8 @@ class CPerson{
         void add_circuit(CSoftCircuit* a_new_circuit);
 
     private:
-        int m_num_circuits;
-        int m_max_circuits = 4;
-        std::vector<CSoftCircuit*> m_circuits_owned;
-
-        
+        // //dynamic array of circuits owned by person
+        std::vector<CSoftCircuit*> m_circuits_owned;        
 };
-
 
 #endif

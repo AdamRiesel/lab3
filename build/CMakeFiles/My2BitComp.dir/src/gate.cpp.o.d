@@ -1,8 +1,8 @@
 CMakeFiles/My2BitComp.dir/src/gate.cpp.o: \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/gate.cpp \
  /usr/include/stdc-predef.h \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/gate.h \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/types.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/gate.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/types.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -152,4 +152,5 @@ CMakeFiles/My2BitComp.dir/src/gate.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/../include/wire.h
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/wire.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/types.h

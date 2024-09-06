@@ -1,5 +1,6 @@
-#include "../include/gate.h"
-#include "../include/wire.h"
+#include "gate.h"
+#include "wire.h"
+#include "types.h"
 #include <iostream>
 
 
@@ -15,8 +16,8 @@ CGate::CGate(){
 CGate::~CGate(){
 }
 
+//--
 void CGate::compute_output(){}
-
 
 //--
 void CGate::connect_output(CWire* ap_output_connection){
@@ -26,6 +27,7 @@ void CGate::connect_output(CWire* ap_output_connection){
 
 //--
 void CGate::drive_input(int a_input_index, eLogicLevel a_new_level){
+    //set the drive level for the specified gate input and compute new output
     m_inputs[a_input_index] = a_new_level;
     compute_output();
 }
@@ -38,6 +40,7 @@ eLogicLevel CGate::get_output_state(){
 //-------CNandGate Implementation--------------
 void CNandGate::compute_output()
 {
+  //define the behaviour of a NAND gate
   eLogicLevel NewVal = LOGIC_HIGH;
   if( m_inputs[0] == LOGIC_UNDEFINED || m_inputs[1] == LOGIC_UNDEFINED )
     NewVal = LOGIC_UNDEFINED;
@@ -45,6 +48,7 @@ void CNandGate::compute_output()
     NewVal = LOGIC_LOW;
   m_output_value = NewVal;
   
+  //set drive level for wire connected to output
   if( mp_output_connection != NULL ){
     mp_output_connection->drive_level( m_output_value );
   }
@@ -53,6 +57,7 @@ void CNandGate::compute_output()
 //-------CAndGate Implementation--------------
 void CAndGate::compute_output(){
 
+    //define the behaviour of a AND gate
     eLogicLevel new_val = LOGIC_LOW;
 
     if( m_inputs[0] == LOGIC_UNDEFINED || m_inputs[1] == LOGIC_UNDEFINED )
@@ -60,16 +65,18 @@ void CAndGate::compute_output(){
     else if (m_inputs[0] == LOGIC_HIGH && m_inputs[1] == LOGIC_HIGH){
         new_val = LOGIC_HIGH;
     }
-    
     m_output_value = new_val;
 
+    //set drive level for wire connected to output
     if( mp_output_connection != NULL ){
-    mp_output_connection->drive_level( m_output_value );
+      mp_output_connection->drive_level( m_output_value );
   }
 }
 
 //-------COrGate Implementation--------------
 void COrGate::compute_output(){
+
+    //define the behaviour of a OR gate
     eLogicLevel new_val = LOGIC_HIGH;
 
     if( m_inputs[0] == LOGIC_UNDEFINED || m_inputs[1] == LOGIC_UNDEFINED )
@@ -77,16 +84,18 @@ void COrGate::compute_output(){
     else if (m_inputs[0] == 0 && m_inputs[1] == 0){
         new_val = LOGIC_LOW;
     }
-    
     m_output_value = new_val;
 
+    //set drive level for wire connected to output
     if( mp_output_connection != NULL ){
-    mp_output_connection->drive_level( m_output_value );
+      mp_output_connection->drive_level( m_output_value );
   }
 }
 
 //-------CNorGate Implementation--------------
 void CNorGate::compute_output(){
+
+    //define the behaviour of a NOR gate
     eLogicLevel new_val = LOGIC_LOW;
 
     if( m_inputs[0] == LOGIC_UNDEFINED || m_inputs[1] == LOGIC_UNDEFINED )
@@ -94,16 +103,18 @@ void CNorGate::compute_output(){
     else if (m_inputs[0] == LOGIC_LOW && m_inputs[1] == LOGIC_LOW){
         new_val = LOGIC_HIGH;
     }
-    
     m_output_value = new_val;
 
+    //set drive level for wire connected to output
     if( mp_output_connection != NULL ){
-    mp_output_connection->drive_level( m_output_value );
+      mp_output_connection->drive_level( m_output_value );
   }
 }
 
 //-------XorGate Implementation--------------
 void CXorGate::compute_output(){
+
+    //define the behaviour of a XOR gate
     eLogicLevel new_val = LOGIC_HIGH;
 
     if( m_inputs[0] == LOGIC_UNDEFINED || m_inputs[1] == LOGIC_UNDEFINED )
@@ -111,11 +122,11 @@ void CXorGate::compute_output(){
     else if (m_inputs[0] == m_inputs[1]){
         new_val = LOGIC_LOW;
     }
-    
     m_output_value = new_val;
 
+    //set drive level for wire connected to output
     if( mp_output_connection != NULL ){
-    mp_output_connection->drive_level( m_output_value );
+      mp_output_connection->drive_level( m_output_value );
   }
 }
 
@@ -128,6 +139,8 @@ CNotGate::CNotGate(){
 
 //--
 void CNotGate::compute_output(){
+
+  //define the behaviour of a NOT gate
   eLogicLevel new_val = LOGIC_UNDEFINED;
   if (m_inputs[0] == LOGIC_HIGH){
     new_val = LOGIC_LOW;
@@ -135,9 +148,9 @@ void CNotGate::compute_output(){
   else if (m_inputs[0] == LOGIC_LOW){
     new_val = LOGIC_HIGH;
   }
-
   m_output_value = new_val;
 
+  //set drive level for wire connected to output
   if( mp_output_connection != NULL ){
     mp_output_connection->drive_level( m_output_value );
   }

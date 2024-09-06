@@ -2,12 +2,11 @@
 #define _GATE_H
 
 #include "types.h"
+
 #include <vector>
-
 #include <iostream>
+
 class CWire;
-
-
 
 //-----gate interface----------
 class CGate{
@@ -15,7 +14,7 @@ class CGate{
     CGate();
     ~CGate();
 
-      /**
+    /**
      * @brief sets which wire the output of the  gate should drive
      * 
      * @param ap_output_connection a pointer to the wire which needs to 

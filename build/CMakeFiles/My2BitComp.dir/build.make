@@ -69,24 +69,10 @@ include CMakeFiles/My2BitComp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/My2BitComp.dir/flags.make
 
-CMakeFiles/My2BitComp.dir/src/circuit.cpp.o: CMakeFiles/My2BitComp.dir/flags.make
-CMakeFiles/My2BitComp.dir/src/circuit.cpp.o: ../src/circuit.cpp
-CMakeFiles/My2BitComp.dir/src/circuit.cpp.o: CMakeFiles/My2BitComp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/My2BitComp.dir/src/circuit.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/My2BitComp.dir/src/circuit.cpp.o -MF CMakeFiles/My2BitComp.dir/src/circuit.cpp.o.d -o CMakeFiles/My2BitComp.dir/src/circuit.cpp.o -c /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/circuit.cpp
-
-CMakeFiles/My2BitComp.dir/src/circuit.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/My2BitComp.dir/src/circuit.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/circuit.cpp > CMakeFiles/My2BitComp.dir/src/circuit.cpp.i
-
-CMakeFiles/My2BitComp.dir/src/circuit.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/My2BitComp.dir/src/circuit.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/circuit.cpp -o CMakeFiles/My2BitComp.dir/src/circuit.cpp.s
-
 CMakeFiles/My2BitComp.dir/src/gate.cpp.o: CMakeFiles/My2BitComp.dir/flags.make
 CMakeFiles/My2BitComp.dir/src/gate.cpp.o: ../src/gate.cpp
 CMakeFiles/My2BitComp.dir/src/gate.cpp.o: CMakeFiles/My2BitComp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/My2BitComp.dir/src/gate.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/My2BitComp.dir/src/gate.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/My2BitComp.dir/src/gate.cpp.o -MF CMakeFiles/My2BitComp.dir/src/gate.cpp.o.d -o CMakeFiles/My2BitComp.dir/src/gate.cpp.o -c /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/gate.cpp
 
 CMakeFiles/My2BitComp.dir/src/gate.cpp.i: cmake_force
@@ -100,7 +86,7 @@ CMakeFiles/My2BitComp.dir/src/gate.cpp.s: cmake_force
 CMakeFiles/My2BitComp.dir/src/main.cpp.o: CMakeFiles/My2BitComp.dir/flags.make
 CMakeFiles/My2BitComp.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/My2BitComp.dir/src/main.cpp.o: CMakeFiles/My2BitComp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/My2BitComp.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/My2BitComp.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/My2BitComp.dir/src/main.cpp.o -MF CMakeFiles/My2BitComp.dir/src/main.cpp.o.d -o CMakeFiles/My2BitComp.dir/src/main.cpp.o -c /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/main.cpp
 
 CMakeFiles/My2BitComp.dir/src/main.cpp.i: cmake_force
@@ -114,7 +100,7 @@ CMakeFiles/My2BitComp.dir/src/main.cpp.s: cmake_force
 CMakeFiles/My2BitComp.dir/src/person.cpp.o: CMakeFiles/My2BitComp.dir/flags.make
 CMakeFiles/My2BitComp.dir/src/person.cpp.o: ../src/person.cpp
 CMakeFiles/My2BitComp.dir/src/person.cpp.o: CMakeFiles/My2BitComp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/My2BitComp.dir/src/person.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/My2BitComp.dir/src/person.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/My2BitComp.dir/src/person.cpp.o -MF CMakeFiles/My2BitComp.dir/src/person.cpp.o.d -o CMakeFiles/My2BitComp.dir/src/person.cpp.o -c /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/person.cpp
 
 CMakeFiles/My2BitComp.dir/src/person.cpp.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/My2BitComp.dir/src/person.cpp.s: cmake_force
 CMakeFiles/My2BitComp.dir/src/wire.cpp.o: CMakeFiles/My2BitComp.dir/flags.make
 CMakeFiles/My2BitComp.dir/src/wire.cpp.o: ../src/wire.cpp
 CMakeFiles/My2BitComp.dir/src/wire.cpp.o: CMakeFiles/My2BitComp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/My2BitComp.dir/src/wire.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/My2BitComp.dir/src/wire.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/My2BitComp.dir/src/wire.cpp.o -MF CMakeFiles/My2BitComp.dir/src/wire.cpp.o.d -o CMakeFiles/My2BitComp.dir/src/wire.cpp.o -c /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/wire.cpp
 
 CMakeFiles/My2BitComp.dir/src/wire.cpp.i: cmake_force
@@ -139,24 +125,10 @@ CMakeFiles/My2BitComp.dir/src/wire.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/My2BitComp.dir/src/wire.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/wire.cpp -o CMakeFiles/My2BitComp.dir/src/wire.cpp.s
 
-CMakeFiles/My2BitComp.dir/src/simulator.cpp.o: CMakeFiles/My2BitComp.dir/flags.make
-CMakeFiles/My2BitComp.dir/src/simulator.cpp.o: ../src/simulator.cpp
-CMakeFiles/My2BitComp.dir/src/simulator.cpp.o: CMakeFiles/My2BitComp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/My2BitComp.dir/src/simulator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/My2BitComp.dir/src/simulator.cpp.o -MF CMakeFiles/My2BitComp.dir/src/simulator.cpp.o.d -o CMakeFiles/My2BitComp.dir/src/simulator.cpp.o -c /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/simulator.cpp
-
-CMakeFiles/My2BitComp.dir/src/simulator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/My2BitComp.dir/src/simulator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/simulator.cpp > CMakeFiles/My2BitComp.dir/src/simulator.cpp.i
-
-CMakeFiles/My2BitComp.dir/src/simulator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/My2BitComp.dir/src/simulator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/simulator.cpp -o CMakeFiles/My2BitComp.dir/src/simulator.cpp.s
-
 CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o: CMakeFiles/My2BitComp.dir/flags.make
 CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o: ../src/soft_circuit.cpp
 CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o: CMakeFiles/My2BitComp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o -MF CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o.d -o CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o -c /home/adamriesel/Desktop/uni/MTRX3760/lab3/src/soft_circuit.cpp
 
 CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.i: cmake_force
@@ -169,27 +141,23 @@ CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.s: cmake_force
 
 # Object files for target My2BitComp
 My2BitComp_OBJECTS = \
-"CMakeFiles/My2BitComp.dir/src/circuit.cpp.o" \
 "CMakeFiles/My2BitComp.dir/src/gate.cpp.o" \
 "CMakeFiles/My2BitComp.dir/src/main.cpp.o" \
 "CMakeFiles/My2BitComp.dir/src/person.cpp.o" \
 "CMakeFiles/My2BitComp.dir/src/wire.cpp.o" \
-"CMakeFiles/My2BitComp.dir/src/simulator.cpp.o" \
 "CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o"
 
 # External object files for target My2BitComp
 My2BitComp_EXTERNAL_OBJECTS =
 
-../My2BitComp: CMakeFiles/My2BitComp.dir/src/circuit.cpp.o
 ../My2BitComp: CMakeFiles/My2BitComp.dir/src/gate.cpp.o
 ../My2BitComp: CMakeFiles/My2BitComp.dir/src/main.cpp.o
 ../My2BitComp: CMakeFiles/My2BitComp.dir/src/person.cpp.o
 ../My2BitComp: CMakeFiles/My2BitComp.dir/src/wire.cpp.o
-../My2BitComp: CMakeFiles/My2BitComp.dir/src/simulator.cpp.o
 ../My2BitComp: CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o
 ../My2BitComp: CMakeFiles/My2BitComp.dir/build.make
 ../My2BitComp: CMakeFiles/My2BitComp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ../My2BitComp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../My2BitComp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/My2BitComp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -19,9 +19,6 @@ class CWire
     CWire();
     ~CWire();
     
-  
-
-
     /**
      * @brief adds to the list of outputs that this wire drives
      * 
@@ -32,7 +29,6 @@ class CWire
      */
     void add_output_connection(CGate* ap_gate_to_drive, int a_gate_input2drive);
     
-
     /**
      * @brief drives the wire's value, and sets each of its connected 
      * outputs to the corresponding level
@@ -42,15 +38,20 @@ class CWire
      */
     void drive_level(eLogicLevel a_new_level);
 
+    /**
+     * @brief retrieves the logic level of the wire
+     * 
+     * @return CWire::m_drive_value the logic level of the wire
+     */
     eLogicLevel get_drive_value();
 
-
   private:
+    //logic level of the wire
     eLogicLevel m_drive_value;
-    std::vector<CGate*> mp_gates2drive;     // list of connected gates
-    std::vector<int> m_gate_input_indices; // list of input to drive in each gate
-
+    // list of connected gates
+    std::vector<CGate*> mp_gates2drive;    
+    // list of input to drive in each gate
+    std::vector<int> m_gate_input_indices; 
 };
-
 
 #endif

@@ -12,11 +12,9 @@ include_directories( # Where are the header files
 
 project(My2BitComp) # Name of this project
 add_executable( My2BitComp 
-                src/circuit.cpp
                 src/gate.cpp
                 src/main.cpp
                 src/person.cpp
                 src/wire.cpp
-                src/simulator.cpp
                 src/soft_circuit.cpp
                 ) # Create an executable "hello

@@ -1,4 +1,4 @@
-#include "../include/person.h"
+#include "person.h"
 #include "soft_circuit.h"
 
 #include <iostream>
@@ -15,17 +15,14 @@ CPerson::~CPerson(){
 
 //--
 void CPerson::add_circuit(CSoftCircuit* a_new_circuit){
-    //TODO
-    /**
-     * choose what type of circuit: 1 bit, 2 bit, etc.
-     */
+
     m_circuits_owned.push_back(a_new_circuit);
 }
 
 //--
 void CPerson::test_circuit(int a_circuit_idx){
 
-    
+    //determine which wires are the input wires
     std::vector<std::string> in_names;
     std::vector<eLogicLevel> in_vals;
 
@@ -48,6 +45,7 @@ void CPerson::test_circuit(int a_circuit_idx){
         in_names.push_back(request);
     }
 
+    //determine the values which each input wire should store
     std::cout << "great, now enter the values for each of those wires" << std::endl;
     request = "";
     while (request.compare("#") != 0){
@@ -76,6 +74,7 @@ void CPerson::test_circuit(int a_circuit_idx){
         in_vals.push_back(val);
     }
 
+    //determine which wires are the desire output wires
     std::cout << "great, now enter the names of the output wires" << std::endl;
     request = "";
     while (request.compare("#") != 0){
@@ -88,10 +87,11 @@ void CPerson::test_circuit(int a_circuit_idx){
         out_names.push_back(request);
     }
 
-
+    //set circuit inputs and retrieve corresponding outputs
     m_circuits_owned[a_circuit_idx]->set_inputs(in_names, in_vals);
     m_circuits_owned[a_circuit_idx]->get_outputs(out_names, out_vals);
 
+    //display test results
     std::cout << "IN: ";
     for (int i = 0; i < int(in_vals.size()); i++){
         std::cout << in_vals[i];
@@ -102,7 +102,10 @@ void CPerson::test_circuit(int a_circuit_idx){
     }
     std::cout << std::endl;
 
+    //reset request value
     request = "";
+
+    //ask user to test more? if yes, get new input values else end program
     while (true){
         /*
         //Use this line if building directly from terminal
@@ -143,9 +146,12 @@ void CPerson::test_circuit(int a_circuit_idx){
 
                 in_vals[i] = val;
             }
+        
+        //set circuit inputs and retrieve corresponding outputs
         m_circuits_owned[a_circuit_idx]->set_inputs(in_names, in_vals);
         m_circuits_owned[a_circuit_idx]->get_outputs(out_names, out_vals);
 
+        //display test results
         std::cout << "IN: ";
         for (int i = 0; i < int(in_vals.size()); i++){
             std::cout << in_vals[i];

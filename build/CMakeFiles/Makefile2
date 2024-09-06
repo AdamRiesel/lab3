@@ -81,12 +81,12 @@ clean: CMakeFiles/My2BitComp.dir/clean
 CMakeFiles/My2BitComp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/My2BitComp.dir/build.make CMakeFiles/My2BitComp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target My2BitComp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target My2BitComp"
 .PHONY : CMakeFiles/My2BitComp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/My2BitComp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/My2BitComp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/adamriesel/Desktop/uni/MTRX3760/lab3/build/CMakeFiles 0
 .PHONY : CMakeFiles/My2BitComp.dir/rule

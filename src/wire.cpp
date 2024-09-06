@@ -1,23 +1,18 @@
-#include "../include/wire.h"
-#include "../include/gate.h"
+#include "wire.h"
+#include "gate.h"
 #include <iostream>
 
 
 //---CWire Implementation------------------------------------------
-CWire::CWire(){
-
-}
+CWire::CWire(){}
 
 //--
-CWire::~CWire(){
-
-}
+CWire::~CWire(){}
 
 //---
 void CWire::add_output_connection( CGate* ap_gate_to_drive, 
             int a_gate_input2drive )
 { 
-
   mp_gates2drive.push_back(ap_gate_to_drive);
   m_gate_input_indices.push_back(a_gate_input2drive);
 }
