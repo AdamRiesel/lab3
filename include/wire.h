@@ -6,10 +6,6 @@
 
 class CGate;
 
-const int InputsPerGate = 2;   // number of inputs per nand gate
-const int MaxFanout = 4;       // maximum fanout: max gate inputs that 
-                               //one gate output can drive
-
 
 //---CPerson Interface----------------------------------------
 class CWire

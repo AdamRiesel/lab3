@@ -5,23 +5,11 @@
 #include <vector>
 
 #include <iostream>
-// #include "wire.h"
 class CWire;
-// void CWire::DriveLevel(eLogicLevel aNewLevel);
-// enum eLogicLevel;
-// class CWire{};
 
 
-// enum eLogicLevel;
-
-const int inputs_per_gate = 2;
-const int max_fanout = 4;
 
 //-----gate interface----------
-/**
- * 
- * 
- */
 class CGate{
   public:
     CGate();
@@ -59,8 +47,11 @@ class CGate{
      */
     virtual void compute_output();
 
-    eLogicLevel m_inputs[inputs_per_gate];
+    //dynamic array of input values
+    std::vector<eLogicLevel> m_inputs;
+    //output value of the gate
     eLogicLevel m_output_value;
+    //pointer to the wire connected to the output
     CWire* mp_output_connection;
 
 };

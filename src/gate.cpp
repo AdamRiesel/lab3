@@ -5,6 +5,7 @@
 
 //-------CGate Implementation--------------
 CGate::CGate(){
+    m_inputs.resize(2);
     m_inputs[0] = m_inputs[1] = LOGIC_UNDEFINED;
     mp_output_connection = NULL;
     compute_output();

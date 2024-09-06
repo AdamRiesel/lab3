@@ -1,5 +1,4 @@
 #include "../include/person.h"
-#include "../include/circuit.h"
 #include "soft_circuit.h"
 
 #include <iostream>
@@ -105,14 +104,20 @@ void CPerson::test_circuit(int a_circuit_idx){
 
     request = "";
     while (true){
+        /*
+        //Use this line if building directly from terminal
         std::cout <<"test more vals? [y/n]"<<std::endl;
+        */
         std::cin>>request;
         if (request.compare("n") == 0){
             break;
         }
         else if (request.compare("y") == 0){
             out_vals.resize(0);
+            /*
+            //Use this line if building directly from terminal
             std::cout<<"Enter new vals followed by #"<<std::endl;
+            */
             for (int i = 0; i < int(in_vals.size()); i++){
                 std::cin >> request;
 

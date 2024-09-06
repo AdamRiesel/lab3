@@ -6,6 +6,7 @@
 #include <vector>
 
 class CGate;
+class CWire;
 
 class CSoftCircuit{
     public:
