@@ -1,5 +1,6 @@
 #include "person.h"
 #include "soft_circuit.h"
+#include "gate.h"
 
 #include <iostream>
 #include <unordered_map>
@@ -24,10 +25,10 @@ void CPerson::test_circuit(int a_circuit_idx){
 
     //determine which wires are the input wires
     std::vector<std::string> in_names;
-    std::vector<eLogicLevel> in_vals;
+    std::vector<CGate::eLogicLevel> in_vals;
 
     std::vector<std::string> out_names;
-    std::vector<eLogicLevel> out_vals;
+    std::vector<CGate::eLogicLevel> out_vals;
 
     std::cout << "Enter the names of the input wires (seperate with spaces, "
                 <<"indicate finished with #): " << std::endl;
@@ -55,17 +56,17 @@ void CPerson::test_circuit(int a_circuit_idx){
             break;
         }
 
-        eLogicLevel val;
+        CGate::eLogicLevel val;
 
 
         if (request.compare("-1") == 0){
-            val = LOGIC_UNDEFINED;
+            val = CGate::LOGIC_UNDEFINED;
         }
         else if (request.compare("0") == 0){
-            val = LOGIC_LOW;
+            val = CGate::LOGIC_LOW;
         }
         else if (request.compare("1") == 0){
-            val = LOGIC_HIGH;
+            val = CGate::LOGIC_HIGH;
         }
         else {
             std::cout<<"invalid value given, expect unexpected output"<<std::endl;
@@ -128,17 +129,17 @@ void CPerson::test_circuit(int a_circuit_idx){
                     break;
                 }
 
-                eLogicLevel val;
+                CGate::eLogicLevel val;
 
 
                 if (request.compare("-1") == 0){
-                    val = LOGIC_UNDEFINED;
+                    val = CGate::LOGIC_HIGH;
                 }
                 else if (request.compare("0") == 0){
-                    val = LOGIC_LOW;
+                    val = CGate::LOGIC_LOW;
                 }
                 else if (request.compare("1") == 0){
-                    val = LOGIC_HIGH;
+                    val = CGate::LOGIC_HIGH;
                 }
                 else {
                     std::cout<<"invalid value given, expect unexpected output"<<std::endl;

@@ -8,8 +8,16 @@
 #include "person.h"
 #include "soft_circuit.h"
 
+/**
+ * This program allows a user to create a circuit of their choice using 
+ * standard logic gates. The program takes input from the standard input 
+ * as to how it should contruct and consequently test the circuit.
+ * 
+ * It is a high quality program worthy of the utmost praise
+ * 
+ * Copyright Adam Riesel 2024
+ */
 int main(){
-
 
     CSoftCircuit my_soft_circuit;
 

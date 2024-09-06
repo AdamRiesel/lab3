@@ -5,7 +5,8 @@
 #include <unordered_map>
 #include <vector>
 
-class CGate;
+#include "gate.h"
+
 class CWire;
 
 class CSoftCircuit{
@@ -28,7 +29,7 @@ class CSoftCircuit{
          * @note value[0] is assigned to name[0] and so on
          */
         void set_inputs(std::vector<std::string> names, 
-                        std::vector<eLogicLevel> values);
+                        std::vector<CGate::eLogicLevel> values);
 
         /**
         * @brief gives the output values of each specified output wire
@@ -37,7 +38,7 @@ class CSoftCircuit{
         * @param outs the value of each output wire specified. Should be
         * parsed empty and with 0 size
         */
-        void get_outputs(std::vector<std::string> names, std::vector<eLogicLevel> &outs);
+        void get_outputs(std::vector<std::string> names, std::vector<CGate::eLogicLevel> &outs);
 
     private:
         //hash map of all gates in the circuit

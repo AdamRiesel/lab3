@@ -33,7 +33,7 @@ void CGate::drive_input(int a_input_index, eLogicLevel a_new_level){
 }
 
 //--
-eLogicLevel CGate::get_output_state(){
+CGate::eLogicLevel CGate::get_output_state(){
     return m_output_value;
 }
 

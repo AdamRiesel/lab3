@@ -163,6 +163,7 @@ CMakeFiles/My2BitComp.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/wire.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/gate.h \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/types.h \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/person.h \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/soft_circuit.h

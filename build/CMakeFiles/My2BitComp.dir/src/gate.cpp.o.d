@@ -153,4 +153,5 @@ CMakeFiles/My2BitComp.dir/src/gate.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/wire.h \
+ /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/gate.h \
  /home/adamriesel/Desktop/uni/MTRX3760/lab3/include/types.h

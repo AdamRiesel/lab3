@@ -14,6 +14,12 @@ class CGate{
     CGate();
     ~CGate();
 
+    enum eLogicLevel      
+    {
+      LOGIC_UNDEFINED = -1,
+      LOGIC_LOW,
+      LOGIC_HIGH
+    };
     /**
      * @brief sets which wire the output of the  gate should drive
      * 

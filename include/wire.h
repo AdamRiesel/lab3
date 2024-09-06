@@ -2,9 +2,9 @@
 #define _WIRE_H
 
 #include <vector>
-#include "types.h"
 
-class CGate;
+#include "types.h"
+#include "gate.h"
 
 
 //---CPerson Interface----------------------------------------
@@ -36,18 +36,18 @@ class CWire
      * @param a_new_level the new logic level which the wire should set
      * it's  output to
      */
-    void drive_level(eLogicLevel a_new_level);
+    void drive_level(CGate::eLogicLevel a_new_level);
 
     /**
      * @brief retrieves the logic level of the wire
      * 
      * @return CWire::m_drive_value the logic level of the wire
      */
-    eLogicLevel get_drive_value();
+    CGate::eLogicLevel get_drive_value();
 
   private:
     //logic level of the wire
-    eLogicLevel m_drive_value;
+    CGate::eLogicLevel m_drive_value;
     // list of connected gates
     std::vector<CGate*> mp_gates2drive;    
     // list of input to drive in each gate

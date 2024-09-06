@@ -133,7 +133,7 @@ void CSoftCircuit::build_circuit(){
 
 //--
 void CSoftCircuit::set_inputs(std::vector<std::string> names, 
-                std::vector<eLogicLevel> values){
+                std::vector<CGate::eLogicLevel> values){
 
   CWire* temp_wire;
 
@@ -146,7 +146,7 @@ void CSoftCircuit::set_inputs(std::vector<std::string> names,
 
 //--
 void CSoftCircuit::get_outputs(std::vector<std::string> names, 
-          std::vector<eLogicLevel> &outs){
+          std::vector<CGate::eLogicLevel> &outs){
 
   CWire* temp_wire;
 
@@ -155,7 +155,7 @@ void CSoftCircuit::get_outputs(std::vector<std::string> names,
     temp_wire = m_wires_in_circuit.find(names[i])->second;
 
     //store the logic value into the output vector
-    eLogicLevel drive_value = temp_wire->get_drive_value();
+    CGate::eLogicLevel drive_value = temp_wire->get_drive_value();
     outs.push_back(drive_value);
 
   }

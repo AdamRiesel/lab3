@@ -189,6 +189,7 @@ CMakeFiles/My2BitComp.dir/src/gate.cpp.o: ../src/gate.cpp \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
   ../include/wire.h \
+  ../include/gate.h \
   ../include/types.h
 
 CMakeFiles/My2BitComp.dir/src/main.cpp.o: ../src/main.cpp \
@@ -393,6 +394,7 @@ CMakeFiles/My2BitComp.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
   ../include/wire.h \
+  ../include/gate.h \
   ../include/types.h \
   ../include/person.h \
   ../include/soft_circuit.h
@@ -570,6 +572,7 @@ CMakeFiles/My2BitComp.dir/src/person.cpp.o: ../src/person.cpp \
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
+  ../include/gate.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -598,7 +601,8 @@ CMakeFiles/My2BitComp.dir/src/person.cpp.o: ../src/person.cpp \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc
+  /usr/include/c++/11/bits/istream.tcc \
+  ../include/gate.h
 
 CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o: ../src/soft_circuit.cpp \
   /usr/include/stdc-predef.h \
@@ -802,6 +806,7 @@ CMakeFiles/My2BitComp.dir/src/soft_circuit.cpp.o: ../src/soft_circuit.cpp \
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
+  ../include/gate.h \
   ../include/wire.h
 
 CMakeFiles/My2BitComp.dir/src/wire.cpp.o: ../src/wire.cpp \
@@ -991,7 +996,8 @@ CMakeFiles/My2BitComp.dir/src/wire.cpp.o: ../src/wire.cpp \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc
+  /usr/include/c++/11/bits/istream.tcc \
+  ../include/gate.h
 
 
 ../src/wire.cpp:
